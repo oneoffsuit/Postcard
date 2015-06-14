@@ -38,15 +38,6 @@
                                     <rect key="frame" x="16" y="322" width="371" height="30"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7b-Yp-Oqz">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="371" height="98"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvg-jO-cdE">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.61496906285308772" blue="0.28317753597674722" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,6 +52,24 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j87-7a-gDt"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFP-QT-f7i">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="376" height="21"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7b-Yp-Oqz">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="101" width="371" height="69"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -68,8 +77,9 @@
                                 <exclude reference="A8w-xd-MjY"/>
                                 <exclude reference="4Ii-tu-ZOQ"/>
                                 <exclude reference="AaG-GV-87A"/>
-                                <exclude reference="z7b-Yp-Oqz"/>
                                 <exclude reference="Yvg-jO-cdE"/>
+                                <exclude reference="aFP-QT-f7i"/>
+                                <exclude reference="z7b-Yp-Oqz"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -77,8 +87,9 @@
                                 <include reference="A8w-xd-MjY"/>
                                 <include reference="4Ii-tu-ZOQ"/>
                                 <include reference="AaG-GV-87A"/>
-                                <include reference="z7b-Yp-Oqz"/>
                                 <include reference="Yvg-jO-cdE"/>
+                                <include reference="aFP-QT-f7i"/>
+                                <include reference="z7b-Yp-Oqz"/>
                             </mask>
                         </variation>
                     </view>
@@ -87,11 +98,12 @@
                         <outlet property="enterNameTextField" destination="4Ii-tu-ZOQ" id="ojs-rk-lDV"/>
                         <outlet property="mailButton" destination="Yvg-jO-cdE" id="REX-St-NEM"/>
                         <outlet property="messageLabel" destination="z7b-Yp-Oqz" id="8kw-R6-KUV"/>
+                        <outlet property="nameLabel" destination="aFP-QT-f7i" id="7Kb-M2-rPC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1897.5" y="389"/>
+            <point key="canvasLocation" x="1897" y="389"/>
         </scene>
         <!--Barcelona-->
         <scene sceneID="sOM-7H-dTf">
@@ -153,6 +165,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BmS-fc-XEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="223.5" y="389"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZYP-Gt-5ah">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZM4-Au-FIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="9BJ-cY-hGR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EnL-HB-bxm"/>
+                        <viewControllerLayoutGuide type="bottom" id="BBh-Iv-jzS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mdf-Qx-mXm">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="596" y="953"/>
         </scene>
     </scenes>
     <resources>
